@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet"> 
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
 
     <!-- Scripts -->
     <script src="assets/lib/moment-with-locales.js"></script>
@@ -17,10 +21,65 @@
 </head>
 
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"></div>
-        <div class="menu"></div>
+    <div class="grid-container">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <header class="showcase">
+            <div class="container showcase-inner">
+                <div>
+                    <h1>Hello, I am <span class="name">Gue H. Yang</span>.</h1>
+                    <h1>I'm a full stack web developer.</h1>
+                </div>
+                <a href="#" class="btn">View my work</a>
+            </div>
+        </header>
+        
+        <div class="navbar"></div>
+
+        <main class="about">
+            <div class="container about-inner">
+                <div>
+                    <h1>About Me</h1>
+                </div>
+                <div>
+                    <img class="bio-pic" src="/assets/img/Gue_Pic.jpg" alt="Picture of Gue">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, natus sunt aperiam neque itaque, eos possimus nihil, ex odit voluptatum incidunt distinctio. Vitae quae, fugiat nobis modi dolorum minima quasi perferendis hic voluptates, incidunt veritatis placeat. Illum ad iure fuga temporibus provident. Architecto, nesciunt numquam. Blanditiis perferendis excepturi mollitia minima?</p>
+                </div>
+            </div>
+        </main>
+
+        <section class="portfolio">
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><a href="https://guhuyan.github.io/Word-Guess-Game/" target="_blank">Word Guess Game</a></div>
+                <div class="portfolio-item"><a href="https://guhuyan.github.io/Group-Project/" target="_blank">Game Database</a></div>
+                <div class="portfolio-item"><a href="https://guhuyan.github.io/TriviaGame/" target="_blank">jQuery Quiz Game</a></div>
+                <div class="portfolio-item"><a href="https://guhuyan.github.io/GifTastic/" target="_blank">Jiphy Clone</a></div>
+                <div class="portfolio-item"><a href="https://guhuyan.github.io/Train-Time/" target="_blank">Firebase Train Time</a></div>
+            </div>
+        </section>
+
+        <!-- Add Contact Section -->
+
+        <footer class="footer">
+
+        </footer>
     </div>
     <!-- Main Scripts -->
     <script src="assets/javascript/app.js"></script>
