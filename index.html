@@ -23,16 +23,16 @@
 <body>
     <div class="grid-container">
         <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
+            <input type="checkbox" class="toggler" id="toggler">
             <div class="hamburger"><div></div></div>
             <div class="menu">
                 <div>
                     <div>
                         <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" id="menu-home">Home</a></li>
+                        <li><a href="#" id="menu-about">About</a></li>
+                        <li><a href="#" id="menu-portfolio">Portfolio</a></li>
+                        <li><a href="#" id="menu-contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,9 +43,9 @@
             <div class="container showcase-inner">
                 <div>
                     <h1>Hello, I am <span class="name">Gue H. Yang</span>.</h1>
-                    <h1>I'm a full stack web developer.</h1>
+                    <h1>I'm a web developer.</h1>
                 </div>
-                <a href="#" class="btn">View my work</a>
+                <a href="#" class="btn" id="view-work">View my work</a>
             </div>
         </header>
         
@@ -57,7 +57,7 @@
                     <h1>About Me</h1>
                 </div>
                 <div>
-                    <img class="bio-pic" src="/assets/img/Gue_Pic.jpg" alt="Picture of Gue">
+                    <img class="bio-pic" src="assets/img/Gue_Pic.jpg" alt="Picture of Gue">
                 </div>
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, natus sunt aperiam neque itaque, eos possimus nihil, ex odit voluptatum incidunt distinctio. Vitae quae, fugiat nobis modi dolorum minima quasi perferendis hic voluptates, incidunt veritatis placeat. Illum ad iure fuga temporibus provident. Architecto, nesciunt numquam. Blanditiis perferendis excepturi mollitia minima?</p>
@@ -66,6 +66,7 @@
         </main>
 
         <section class="portfolio">
+            <h1>Check Out My Works</h1>
             <div class="portfolio-grid">
                 <div class="portfolio-item"><a href="https://guhuyan.github.io/Word-Guess-Game/" target="_blank">Word Guess Game</a></div>
                 <div class="portfolio-item"><a href="https://guhuyan.github.io/Group-Project/" target="_blank">Game Database</a></div>
@@ -76,6 +77,27 @@
         </section>
 
         <!-- Add Contact Section -->
+        <section class="contact">
+            <div class="contact-form">
+                <h1>Contact</h1>
+                <hr>
+                <h3>Full Name</h3>
+                <div class="text-block">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <h3>Email</h3>
+                <div class="text-block">
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+                <h3>Message</h3>
+                <div class="text-block">
+                    <textarea rows="12"></textarea>
+                </div>
+                <div>
+                    <button class="btn-contact">Submit</button>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer">
 
